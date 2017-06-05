@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FinTec Robot Advisior</title>
+    <meta name="description" content="A Modern Framework for the Next Decade">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta property="og:title" content="Project Enferno"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{{ url_for('static',filename='img/logo.jpg',_external=True) }}"/>
+    <meta property="og:url" content="{{ request.base_url }}"/>
+    <meta property="og:description" content="A Modern Framework for the Next Decade"/>
+    <meta property="og:site_name" content="Enferno.io"/>
+
+    {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+
+    {% block css %}{% endblock %}
+
+
+    <script src="/static/js/modernizr.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<header class="cd-header">
+    <div class="cd-logo">
+        <a href="/">
+            <img width="45" src="/static/img/logo.svg" alt="Enferno">
+        </a>
+    </div>
+
+    <nav align="right">
+        <ul class="button">
+
+
+            <li aria-live="off" color-class="black"><a href="Home">Home</a>
+                <a href="RA">RA</a>
+                <a href="Mojie">Mojie</a>
+                <a href="Blog">Blog</a>
+                <a href="About">About</a></li>
+
+        </ul>
+    </nav>
+    <!-- cd-nav -->
+
+    <a class="cd-primary-nav-trigger" href="#0">
+        <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+    </a> <!-- cd-primary-nav-trigger -->
+</header>
+
+
+<nav>
+    <ul class="cd-primary-nav">
+
+
+        <li><a href="Home">Home</a></li>
+        <li><a href="RA">RA</a></li>
+        <li><a href="Mojie">Mojie</a></li>
+        <li><a href="Blog">Blog</a></li>
+        <li><a href="About">About</a></li>
+
+    </ul>
+</nav>
+
+
+
+
+{% block header %}
+    <section class="cd-intro">
+        <h1>Robot Advisior Help Us Invest More Efficiently ! </h1>
+    </section>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+    {% include "security/_messages.html" %}
+
+{% endblock %}
+
+<footer>
+
+    <p>&copy;2017 powered by <a href="http://fintec.io" target="_blank">Chinasofti</a></p>
+
+
+</footer>
+
+{% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+{% block js %}{% endblock %}
+
+</body>
+</html>
