@@ -14,7 +14,10 @@ body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden;
 }
-
+        body {
+            background-color: linen;
+            margin-top: 50px;
+        }
 a {
   color: white;
   text-decoration: none;
