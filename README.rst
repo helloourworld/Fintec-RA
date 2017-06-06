@@ -1,42 +1,26 @@
-Project Enferno
+Project Fintec-RA
 ==================
-
-A framework for the next decade, this is a collection of cutting-edge libraries and tools based on Flask framework.
-
-http://enferno.io
-
-To learn more about the framework and its use cases, you can follow my articles on Medium :
-
-http://medium.com/@level09/
-
-
-Prerequisites
--------------
-
-* MongoDB 
-* Redis
-* Python Imaging (jpeg/png) support if you would like to work with images
-
+Demo of Fintec-RA
 
 Quickstart
 ----------
 ::
 
-    $ git clone git@github.com:level09/enferno.git
-    
-    $ cd enferno 
-    
+    $ git clone git@github.com:helloourworld/Fintec-RA.git
+
+    $ cd Fintec-RA
+
     $ virtualenv env
-    
-    $ source env/bin/activate 
-    
-    $ pip install -r requirements.txt 
+
+    $ source env/bin/activate
+
+    $ pip install -r requirements.txt
 
 After that, you should create your admin user, run the following command:
 ::
 
     $ ./manage.py install
-    
+
 and follow the instructions
 
 
@@ -45,7 +29,7 @@ Edit the settings.py and change the settings to suit your needs, sepcifically yo
 to run the system, you can use a management command:
 ::
 
-    $ ./manage.py server
+    $ ./manage.py runserver
 
 
 Features
@@ -61,25 +45,7 @@ Features
 - Email integration via Flask Mail
 - Best practices by utilizing Flask blueprints and development/production configuration
 
-
-
-Inspiration & Credits
----------------------
-
-- `Cookiecutter Flask <https://github.com/sloria/cookiecutter-flask>`_
-- `Flask Security <https://pythonhosted.org/Flask-Security/>`_
-- `Mongoengine <http://mongoengine.org/>`_
-- `Flask WTF <https://flask-wtf.readthedocs.org/en/latest/>`_
-- `Flask Admin <https://github.com/mrjoes/flask-admin/>`_
-- `Celery Task Queue <http://www.celeryproject.org/>`_
-- `Redis <http://redis.io/>`_
-- `Flask Mail <https://pythonhosted.org/flask-mail/>`_
-- `Flask Documentation <http://flask.pocoo.org/docs/>`_
-- `Celery Task Queue <http://www.celeryproject.org/>`_
-
-
 License
 -------
-
-MIT licensed.
+None
 
