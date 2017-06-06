@@ -1,8 +1,14 @@
 {% extends 'layout.html' %}
 {% block header %}
+    <style>
+        body {
+            background-color: linen;
+        }
+    </style>
     <h3 align="center">Mojie Extract</h3>
 {% endblock %}
 {% block content %}
+
     <main class="cd-main-content">
         <div class="cd-container">
             {% for p in posts %}
